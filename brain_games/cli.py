@@ -2,7 +2,12 @@
 import prompt
 
 
+def getPlayerName():
+    player_name = prompt.string('May I have your name? ')
+    return player_name
+
+
 def welcome_user():
     print('Welcome to the Brain Games!')
-    name = prompt.string('May I have your name? ')
-    print(f"Hello, { name }!")
+    print(f"Hello, { getPlayerName() }!")
+    print('Answer "yes" if the number is even, otherwise answer "no".')

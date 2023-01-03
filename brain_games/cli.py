@@ -1,5 +1,10 @@
 #!/usr/bin/env python3
 import prompt
+import random
+
+
+def getRandomeNumber() -> int:
+    return random.randint(1, 100)
 
 
 def getPlayerName():

@@ -1,10 +1,5 @@
 import prompt
-import random
-from brain_games.cli import getPlayerName
-
-
-def getRandomeNumber() -> int:
-    return random.randint(1, 100)
+from brain_games.cli import getPlayerName, getRandomeNumber
 
 
 def isEvenNumber(number: int) -> str:
@@ -29,8 +24,10 @@ def guestEvenNumber() -> str:
         if check_n == answer:
             print('Correct!')
         else:
-            print(f"{answer} is wrong answer ;(. Correct answer was '{check_n}'. \
-             Let's try again, Bill!)")
+            print(
+                f"{answer} is wrong answer ;(. Correct answer was '{check_n}'.\
+                Let's try again, Bill!)"
+            )
             break
 
         counter -= 1

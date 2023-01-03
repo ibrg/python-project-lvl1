@@ -29,9 +29,9 @@ def guestEvenNumber() -> str:
         if check_n == answer:
             print('Correct!')
         else:
-            print("'yes' is wrong answer ;(. Correct answer was 'no'. \
+            print(f"{answer} is wrong answer ;(. Correct answer was '{check_n}'. \
              Let's try again, Bill!)")
             break
 
-        n -= 1
+        counter -= 1
     print(f"Congratulations, { name } !")

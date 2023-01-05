@@ -1,5 +1,5 @@
 import prompt
-from brain_games.cli import getPlayerName, getRandomeNumber
+from brain_games.cli import welcome, welcome_user, getRandomeNumber, getPlayerName
 
 
 def isEvenNumber(number: int) -> str:
@@ -12,7 +12,10 @@ def getPlayerAnswer() -> str:
 
 
 def guestEvenNumber() -> str:
-    name = getPlayerName()
+    game_rule = 'Answer "yes" if the number is even, otherwise answer "no".'
+    player_name = getPlayerName()
+    welcome_user(game_rule, )
+
     counter = 3
 
     while counter > 0:
@@ -31,4 +34,13 @@ def guestEvenNumber() -> str:
             break
 
         counter -= 1
-    print(f"Congratulations, { name } !")
+    print(f"Congratulations, { player_name }!")
+
+
+def main():
+    welcome()
+    guestEvenNumber()
+
+
+if __name__=='__main__':
+    main()

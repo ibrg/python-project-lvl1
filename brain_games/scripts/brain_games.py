@@ -1,9 +1,10 @@
 #!/usr/bin/env python3
-from brain_games.scripts.brain_even import guestEvenNumber
+from brain_games.cli import welcome, welcome_user, getPlayerName
 
 
 def main():
-    guestEvenNumber()
+    welcome()
+    welcome_user(player_name=getPlayerName())
 
 
 if __name__ == '__main__':

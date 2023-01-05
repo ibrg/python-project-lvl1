@@ -8,11 +8,13 @@ def getRandomeNumber() -> int:
 
 
 def getPlayerName():
-    player_name = prompt.string('May I have your name? ')
-    return player_name
+    return prompt.string('May I have your name? ')
 
-
-def welcome_user():
+def welcome():
     print('Welcome to the Brain Games!')
-    print(f"Hello, { getPlayerName() }!")
-    print('Answer "yes" if the number is even, otherwise answer "no".')
+
+def welcome_user(game_rule: str = None, player_name: str = None) -> str:
+    if player_name: 
+        print(f"Hello, { player_name }!")
+    if game_rule:
+        print(game_rule)

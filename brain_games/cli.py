@@ -4,7 +4,7 @@ import random
 
 
 def getRandomeNumber() -> int:
-    return random.randint(1, 100)
+    return random.randint(1, 30)
 
 
 def getPlayerName():

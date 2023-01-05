@@ -11,6 +11,11 @@ def getPlayerName():
     return prompt.string('May I have your name? ')
 
 
+def getPlayerAnswer() -> str:
+    asnwer = prompt.string('Your answer: ')
+    return asnwer
+
+
 def welcome():
     print('Welcome to the Brain Games!')
 

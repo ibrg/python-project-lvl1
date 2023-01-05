@@ -1,15 +1,13 @@
-import prompt
-from brain_games.cli import welcome, welcome_user, getRandomeNumber,\
-    getPlayerName
+from brain_games.cli import \
+    welcome,\
+    welcome_user, \
+    getRandomeNumber,\
+    getPlayerName, \
+    getPlayerAnswer
 
 
 def isEvenNumber(number: int) -> str:
     return 'yes' if number % 2 == 0 else 'no'
-
-
-def getPlayerAnswer() -> str:
-    asnwer = prompt.string('Your answer: ')
-    return asnwer
 
 
 def guestEvenNumber() -> str:
@@ -23,7 +21,7 @@ def guestEvenNumber() -> str:
         n = getRandomeNumber()
         print(f"Question: { n }")
         check_n = isEvenNumber(n)
-        answer = str(getPlayerAnswer())
+        answer = getPlayerAnswer()
 
         if check_n == answer:
             print('Correct!')

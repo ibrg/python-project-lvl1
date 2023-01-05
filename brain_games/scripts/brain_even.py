@@ -21,20 +21,21 @@ def guestEvenNumber() -> str:
     while counter > 0:
         n = getRandomeNumber()
         print(f"Question: { n }")
-        check_n = isEvenNumber(n)
+        result = isEvenNumber(n)
         answer = getPlayerAnswer()
 
-        if check_n == answer:
+        if result == answer:
             print('Correct!')
         else:
             print(
-                f"{answer} is wrong answer ;(. Correct answer was '{check_n}'.\
-                Let's try again, Bill!)"
+                f"{answer} is wrong answer ;(. Correct answer was '{result}'.\
+                Let's try again, { player_name }!)"
             )
             break
 
         counter -= 1
-    print(f"Congratulations, { player_name }!")
+    else:
+        print(f"Congratulations, { player_name }!")
 
 
 def main():

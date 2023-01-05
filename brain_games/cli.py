@@ -10,11 +10,13 @@ def getRandomeNumber() -> int:
 def getPlayerName():
     return prompt.string('May I have your name? ')
 
+
 def welcome():
     print('Welcome to the Brain Games!')
 
+
 def welcome_user(game_rule: str = None, player_name: str = None) -> str:
-    if player_name: 
+    if player_name:
         print(f"Hello, { player_name }!")
     if game_rule:
         print(game_rule)

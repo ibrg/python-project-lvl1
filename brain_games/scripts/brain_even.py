@@ -1,5 +1,6 @@
 import prompt
-from brain_games.cli import welcome, welcome_user, getRandomeNumber, getPlayerName
+from brain_games.cli import welcome, welcome_user, getRandomeNumber,\
+    getPlayerName
 
 
 def isEvenNumber(number: int) -> str:
@@ -42,5 +43,5 @@ def main():
     guestEvenNumber()
 
 
-if __name__=='__main__':
+if __name__ == '__main__':
     main()

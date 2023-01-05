@@ -1,10 +1,12 @@
 from random import choice
-from brain_games.cli import \
-    welcome,\
-    welcome_user, \
-    getPlayerName, \
-    getRandomeNumber, \
-    getPlayerAnswer
+
+from brain_games.cli import (
+    getPlayerAnswer,
+    getPlayerName,
+    getRandomeNumber,
+    welcome,
+    welcome_user,
+)
 
 
 def getRandomOperator() -> choice:
@@ -35,7 +37,7 @@ def Task():
 
         if result != answer:
             print(
-                f"{answer}' is wrong answer ;(. Correct answer was { result }."
+                f"{answer}' is wrong answer ;(. Correct answer was { result }. "
                 f"Let's try again, Sam!"
             )
             break

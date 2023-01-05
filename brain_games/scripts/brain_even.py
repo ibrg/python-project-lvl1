@@ -1,9 +1,10 @@
-from brain_games.cli import \
-    welcome,\
-    welcome_user, \
-    getRandomeNumber,\
-    getPlayerName, \
-    getPlayerAnswer
+from brain_games.cli import (
+    getPlayerAnswer,
+    getPlayerName,
+    getRandomeNumber,
+    welcome,
+    welcome_user,
+)
 
 
 def isEvenNumber(number: int) -> str:

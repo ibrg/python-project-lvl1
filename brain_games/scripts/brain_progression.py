@@ -18,7 +18,7 @@ def game(player_name):
         start_index = randint(1, len(lst) % 10)
         progres_num = randint(1, 4)
         play_lst = lst[start_index::progres_num]
-        index = randint(1, len(play_lst)-1)
+        index = randint(1, len(play_lst) - 1)
         hide_num = play_lst[index]
         play_lst[index] = '..'
         print("Question: ", end='')

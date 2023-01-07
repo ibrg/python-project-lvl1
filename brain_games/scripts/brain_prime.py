@@ -8,7 +8,6 @@ from brain_games.cli import (
 )
 
 
-
 def isPrime(num: int) -> str:
     for i in range(2, int(num ** 0.5) + 1):
         if num % i == 0:
@@ -32,9 +31,10 @@ def game(player_name):
     else:
         print(f"Congratulations, { player_name }!")
 
+
 def main():
     welcome()
     player_name = getPlayerName()
-    player_rule = 'Answer "yes" if given number is prime. Otherwise answer "no".'
-    welcome_user(player_rule, player_name)
+    game_rule = 'Answer "yes" if given number is prime. Otherwise answer "no".'
+    welcome_user(game_rule, player_name)
     game(player_name)

@@ -14,15 +14,15 @@ def game(player_name):
     counter = 3
 
     while counter > 0:
-        lst = [x for x in range(randint(1, 100))]
-        start_index = randint(0, 25)
-        progres_num = randint(1, 8)
-        lst = lst[start_index::progres_num]
-        index = randint(1, len(lst) - 1)
-        hide_num = lst[index]
-        lst[index] = '..'
+        lst = [x for x in range(1, 50)]
+        start_index = randint(1, len(lst) % 10)
+        progres_num = randint(1, 4)
+        play_lst = lst[start_index::progres_num]
+        index = randint(1, len(play_lst)-1)
+        hide_num = play_lst[index]
+        play_lst[index] = '..'
         print("Question: ", end='')
-        print(*lst)
+        print(*play_lst)
 
         answer = getPlayerAnswer()
         check_answer = compareAnswers(hide_num, answer, player_name)

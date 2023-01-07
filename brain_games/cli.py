@@ -34,7 +34,7 @@ def compareAnswers(answer, user_answer, player_name):
         return 'Correct!'
     else:
         print(
-            f"{user_answer} is wrong answer ;(. Correct answer was '{answer}'."
+            f"'{user_answer}' is wrong answer ;(. Correct answer was '{answer}'."
             f" Let's try again, { player_name }!)"
         )
         return False

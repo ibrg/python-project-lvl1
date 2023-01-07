@@ -1,7 +1,7 @@
 [tool.poetry]
 name = "brain-game"
-version = "0.1.6"
-description = "hexlet brain-game"
+version = "0.2.1"
+description = "«Brain games» — collection with five console games"
 authors = ["Your Name <you@example.com>"]
 packages = [
     { include = "brain_games" },

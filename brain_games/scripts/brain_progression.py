@@ -1,5 +1,12 @@
 from random import randint
-from brain_games.cli import welcome, welcome_user, getPlayerAnswer, getPlayerName, compareAnswers
+
+from brain_games.cli import (
+    compareAnswers,
+    getPlayerAnswer,
+    getPlayerName,
+    welcome,
+    welcome_user,
+)
 
 
 def game(player_name):
@@ -11,10 +18,9 @@ def game(player_name):
         start_index = randint(0, 25)
         progres_num = randint(1, 8)
         lst = lst[start_index::progres_num]
-        index = randint(1, len(lst)-1)
+        index = randint(1, len(lst) - 1)
         hide_num = lst[index]
         lst[index] = '..'
-        
         print("Question: ", end='')
         print(*lst)
 
@@ -34,7 +40,6 @@ def main():
     player_name = getPlayerName()
     welcome_user(game_rule, player_name)
     game(player_name)
-
 
 
 if __name__ == '__main__':

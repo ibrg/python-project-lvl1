@@ -1,4 +1,11 @@
-from brain_games.cli import welcome, welcome_user, getPlayerName, getRandomeNumber, getPlayerAnswer, compareAnswers
+from brain_games.cli import (
+    compareAnswers,
+    getPlayerAnswer,
+    getPlayerName,
+    getRandomeNumber,
+    welcome,
+    welcome_user,
+)
 
 
 def guesNod(a, b):

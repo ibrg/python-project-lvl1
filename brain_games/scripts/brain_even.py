@@ -12,7 +12,7 @@ def isEvenNumber(number: int) -> str:
     return 'yes' if number % 2 == 0 else 'no'
 
 
-def guestEvenNumber(player_name) -> str:    
+def guestEvenNumber(player_name) -> str:
     counter = 3
 
     while counter > 0:
@@ -21,10 +21,9 @@ def guestEvenNumber(player_name) -> str:
         result = isEvenNumber(n)
         answer = getPlayerAnswer()
 
-        if not  compareAnswers(result, answer, player_name):
+        if not compareAnswers(result, answer, player_name):
             break
         counter -= 1
-        
     else:
         print(f"Congratulations, { player_name }!")
 

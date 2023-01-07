@@ -26,13 +26,15 @@ def welcome_user(game_rule: str = None, player_name: str = None) -> str:
         print(game_rule)
 
 
-def compareAnswers(correct_answer, user_answer, player_name):
-    if str(correct_answer) == str(user_answer):
+def compareAnswers(answer, user_answer, player_name):
+    answer = str(answer)
+    user_answer = str(user_answer)
+
+    if answer == user_answer:
         return 'Correct!'
     else:
         print(
-            f"{str(user_answer)} is wrong answer ;(. Correct answer was '{str(correct_answer)}'."
+            f"{user_answer} is wrong answer ;(. Correct answer was '{answer}'."
             f" Let's try again, { player_name }!)"
         )
         return False
- 

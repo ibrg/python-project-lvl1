@@ -1,7 +1,7 @@
 ### Hexlet tests and linter status:
 [![Actions Status](https://github.com/ibrg/python-project-lvl1/workflows/hexlet-check/badge.svg)](https://github.com/ibrg/python-project-lvl1/actions)
 
-
+[![Maintainability](https://api.codeclimate.com/v1/badges/69e223f9097ce5a6344a/maintainability)](https://codeclimate.com/github/ibrg/python-project-lvl1/maintainability)
 ### Description
 **«Brain games» — collection with five console games **
 

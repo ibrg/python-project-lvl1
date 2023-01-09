@@ -2,7 +2,7 @@ from random import randint
 
 
 def welcome():
-    print('Answer "yes" if number even otherwise answer "no".\n')
+    print('Answer "yes" if number even otherwise answer "no".')
 
 
 def is_even_number(number: int) -> str:
